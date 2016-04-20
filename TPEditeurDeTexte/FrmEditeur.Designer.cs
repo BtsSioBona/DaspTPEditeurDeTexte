@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.rtbAffiche = new System.Windows.Forms.RichTextBox();
             this.mnuPrincipal = new System.Windows.Forms.MenuStrip();
             this.MnuFichier = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,13 @@
             this.MnuRetablir = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuCopier = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuColler = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctxMnu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.CtxAnuler = new System.Windows.Forms.ToolStripMenuItem();
+            this.CtxRetablir = new System.Windows.Forms.ToolStripMenuItem();
+            this.CtxCopier = new System.Windows.Forms.ToolStripMenuItem();
+            this.CtxColler = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
+            this.ctxMnu.SuspendLayout();
             this.SuspendLayout();
             // 
             // rtbAffiche
@@ -132,6 +139,44 @@
             this.MnuColler.Text = "Coller";
             this.MnuColler.Click += new System.EventHandler(this.MnuColler_Click);
             // 
+            // ctxMnu
+            // 
+            this.ctxMnu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CtxAnuler,
+            this.CtxRetablir,
+            this.CtxCopier,
+            this.CtxColler});
+            this.ctxMnu.Name = "ctxMnu";
+            this.ctxMnu.Size = new System.Drawing.Size(117, 92);
+            // 
+            // CtxAnuler
+            // 
+            this.CtxAnuler.Name = "CtxAnuler";
+            this.CtxAnuler.Size = new System.Drawing.Size(152, 22);
+            this.CtxAnuler.Text = "Annuler";
+            this.CtxAnuler.Click += new System.EventHandler(this.CtxAnuler_Click);
+            // 
+            // CtxRetablir
+            // 
+            this.CtxRetablir.Name = "CtxRetablir";
+            this.CtxRetablir.Size = new System.Drawing.Size(152, 22);
+            this.CtxRetablir.Text = "Rétablir";
+            this.CtxRetablir.Click += new System.EventHandler(this.CtxRetablir_Click);
+            // 
+            // CtxCopier
+            // 
+            this.CtxCopier.Name = "CtxCopier";
+            this.CtxCopier.Size = new System.Drawing.Size(152, 22);
+            this.CtxCopier.Text = "Copier";
+            this.CtxCopier.Click += new System.EventHandler(this.CtxCopier_Click);
+            // 
+            // CtxColler
+            // 
+            this.CtxColler.Name = "CtxColler";
+            this.CtxColler.Size = new System.Drawing.Size(152, 22);
+            this.CtxColler.Text = "Coller";
+            this.CtxColler.Click += new System.EventHandler(this.collerToolStripMenuItem_Click);
+            // 
             // FrmEditeur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +189,7 @@
             this.Text = "Mon petit éditeur";
             this.mnuPrincipal.ResumeLayout(false);
             this.mnuPrincipal.PerformLayout();
+            this.ctxMnu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +208,11 @@
         private System.Windows.Forms.ToolStripMenuItem MnuRetablir;
         private System.Windows.Forms.ToolStripMenuItem MnuCopier;
         private System.Windows.Forms.ToolStripMenuItem MnuColler;
+        private System.Windows.Forms.ContextMenuStrip ctxMnu;
+        private System.Windows.Forms.ToolStripMenuItem CtxAnuler;
+        private System.Windows.Forms.ToolStripMenuItem CtxRetablir;
+        private System.Windows.Forms.ToolStripMenuItem CtxCopier;
+        private System.Windows.Forms.ToolStripMenuItem CtxColler;
     }
 }
 

@@ -71,5 +71,26 @@ namespace TPEditeurDeTexte
         {
             rtbAffiche.Text = text;
         }
+
+        private void CtxAnuler_Click(object sender, EventArgs e)
+        {
+            text = rtbAffiche.Text;
+            rtbAffiche.ResetText();
+        }
+
+        private void CtxRetablir_Click(object sender, EventArgs e)
+        {
+            rtbAffiche.Text = text;
+        }
+
+        private void CtxCopier_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            Clipboard.SetText(rtbAffiche.Text);
+        }
+        private void collerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rtbAffiche.AppendText(Clipboard.GetText());
+        }
     }
 }
