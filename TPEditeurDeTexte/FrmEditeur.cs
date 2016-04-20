@@ -49,5 +49,16 @@ namespace TPEditeurDeTexte
         {
             Application.Exit();
         }
+
+        private void MnuCopier_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            Clipboard.SetText(rtbAffiche.Text);
+        }
+
+        private void MnuColler_Click(object sender, EventArgs e)
+        {
+            rtbAffiche.AppendText(Clipboard.GetText());
+        }
     }
 }

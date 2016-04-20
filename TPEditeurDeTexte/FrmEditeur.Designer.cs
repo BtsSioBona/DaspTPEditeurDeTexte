@@ -121,12 +121,14 @@
             this.MnuCopier.Name = "MnuCopier";
             this.MnuCopier.Size = new System.Drawing.Size(152, 22);
             this.MnuCopier.Text = "Copier";
+            this.MnuCopier.Click += new System.EventHandler(this.MnuCopier_Click);
             // 
             // MnuColler
             // 
             this.MnuColler.Name = "MnuColler";
             this.MnuColler.Size = new System.Drawing.Size(152, 22);
             this.MnuColler.Text = "Coller";
+            this.MnuColler.Click += new System.EventHandler(this.MnuColler_Click);
             // 
             // FrmEditeur
             // 
