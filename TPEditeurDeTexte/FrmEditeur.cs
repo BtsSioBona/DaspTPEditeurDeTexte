@@ -23,12 +23,13 @@ namespace TPEditeurDeTexte
         {
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.InitialDirectory = @"Documents\";
-            saveDialog.FileName = ".txt";
             saveDialog.Filter = "Fichier texte (*.txt)|*.*";
-            saveDialog.Title = "Enregister le fichier";
-            saveDialog.ShowDialog();
-            FileStream saveFile = (FileStream)saveDialog.OpenFile();
-            saveFile.Close();
+            DialogResult result = saveDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string file = rtbAffiche.Text;
+                File.WriteAllText(saveDialog.FileName, file);
+            }
         }
 
         private void MnuOuvrir_Click(object sender, EventArgs e)
