@@ -1,1 +1,8 @@
 c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\bin\Debug\TPEditeurDeTexte.exe.config
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\bin\Debug\TPEditeurDeTexte.exe
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\bin\Debug\TPEditeurDeTexte.pdb
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\obj\Debug\TPEditeurDeTexte.FrmEditeur.resources
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\obj\Debug\TPEditeurDeTexte.Properties.Resources.resources
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\obj\Debug\TPEditeurDeTexte.csproj.GenerateResource.Cache
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\obj\Debug\TPEditeurDeTexte.exe
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPEditeurDeTexte\TPEditeurDeTexte\obj\Debug\TPEditeurDeTexte.pdb

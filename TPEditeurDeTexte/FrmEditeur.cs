@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TPEditeurDeTexte
 {
-    public partial class Form1 : Form
+    public partial class FrmEditeur : Form
     {
-        public Form1()
+        public FrmEditeur()
         {
             InitializeComponent();
         }
