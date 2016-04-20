@@ -60,5 +60,16 @@ namespace TPEditeurDeTexte
         {
             rtbAffiche.AppendText(Clipboard.GetText());
         }
+        string text;
+        private void MnuAnnuler_Click(object sender, EventArgs e)
+        {
+            text = rtbAffiche.Text;
+            rtbAffiche.ResetText();
+        }
+
+        private void MnuRetablir_Click(object sender, EventArgs e)
+        {
+            rtbAffiche.Text = text;
+        }
     }
 }

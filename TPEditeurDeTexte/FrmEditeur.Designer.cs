@@ -109,12 +109,14 @@
             this.MnuAnnuler.Name = "MnuAnnuler";
             this.MnuAnnuler.Size = new System.Drawing.Size(152, 22);
             this.MnuAnnuler.Text = "Annuler";
+            this.MnuAnnuler.Click += new System.EventHandler(this.MnuAnnuler_Click);
             // 
             // MnuRetablir
             // 
             this.MnuRetablir.Name = "MnuRetablir";
             this.MnuRetablir.Size = new System.Drawing.Size(152, 22);
             this.MnuRetablir.Text = "Rétablir";
+            this.MnuRetablir.Click += new System.EventHandler(this.MnuRetablir_Click);
             // 
             // MnuCopier
             // 
