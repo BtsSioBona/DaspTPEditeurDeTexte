@@ -16,5 +16,10 @@ namespace TPEditeurDeTexte
         {
             InitializeComponent();
         }
+
+        private void enregistrerSousToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
