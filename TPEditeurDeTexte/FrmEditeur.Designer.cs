@@ -31,10 +31,10 @@
             this.rtbAffiche = new System.Windows.Forms.RichTextBox();
             this.mnuPrincipal = new System.Windows.Forms.MenuStrip();
             this.MnuFichier = new System.Windows.Forms.ToolStripMenuItem();
-            this.editionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuOuvrir = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuEnregister = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuQuitter = new System.Windows.Forms.ToolStripMenuItem();
+            this.editionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,17 +68,12 @@
             this.MnuFichier.Size = new System.Drawing.Size(54, 20);
             this.MnuFichier.Text = "&Fichier";
             // 
-            // editionToolStripMenuItem
-            // 
-            this.editionToolStripMenuItem.Name = "editionToolStripMenuItem";
-            this.editionToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.editionToolStripMenuItem.Text = "&Edition";
-            // 
             // MnuOuvrir
             // 
             this.MnuOuvrir.Name = "MnuOuvrir";
             this.MnuOuvrir.Size = new System.Drawing.Size(157, 22);
             this.MnuOuvrir.Text = "Ouvrir";
+            this.MnuOuvrir.Click += new System.EventHandler(this.MnuOuvrir_Click);
             // 
             // MnuEnregister
             // 
@@ -93,6 +88,12 @@
             this.MnuQuitter.Size = new System.Drawing.Size(157, 22);
             this.MnuQuitter.Text = "Quitter";
             this.MnuQuitter.Click += new System.EventHandler(this.MnuQuitter_Click);
+            // 
+            // editionToolStripMenuItem
+            // 
+            this.editionToolStripMenuItem.Name = "editionToolStripMenuItem";
+            this.editionToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.editionToolStripMenuItem.Text = "&Edition";
             // 
             // FrmEditeur
             // 
