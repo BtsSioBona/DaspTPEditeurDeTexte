@@ -92,6 +92,7 @@
             this.MnuQuitter.Name = "MnuQuitter";
             this.MnuQuitter.Size = new System.Drawing.Size(157, 22);
             this.MnuQuitter.Text = "Quitter";
+            this.MnuQuitter.Click += new System.EventHandler(this.MnuQuitter_Click);
             // 
             // FrmEditeur
             // 

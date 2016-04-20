@@ -21,5 +21,10 @@ namespace TPEditeurDeTexte
         {
 
         }
+
+        private void MnuQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
