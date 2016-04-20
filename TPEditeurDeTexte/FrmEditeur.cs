@@ -45,10 +45,6 @@ namespace TPEditeurDeTexte
                 rtbAffiche.Text = text;
             }
         }
-        private void MnuQuitter_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void MnuCopier_Click(object sender, EventArgs e)
         {
@@ -91,6 +87,10 @@ namespace TPEditeurDeTexte
         private void collerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rtbAffiche.AppendText(Clipboard.GetText());
+        }
+        private void MnuQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
