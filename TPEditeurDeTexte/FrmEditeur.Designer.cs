@@ -51,6 +51,7 @@
             // 
             // rtbAffiche
             // 
+            this.rtbAffiche.ContextMenuStrip = this.ctxMnu;
             this.rtbAffiche.Location = new System.Drawing.Point(-1, 27);
             this.rtbAffiche.Name = "rtbAffiche";
             this.rtbAffiche.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
