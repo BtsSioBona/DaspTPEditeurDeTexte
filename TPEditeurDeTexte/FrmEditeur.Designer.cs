@@ -34,7 +34,11 @@
             this.MnuOuvrir = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuEnregister = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.editionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuEdition = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuAnnuler = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuRetablir = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuCopier = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuColler = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +55,7 @@
             // 
             this.mnuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnuFichier,
-            this.editionToolStripMenuItem});
+            this.MnuEdition});
             this.mnuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnuPrincipal.Name = "mnuPrincipal";
             this.mnuPrincipal.Size = new System.Drawing.Size(292, 24);
@@ -89,11 +93,40 @@
             this.MnuQuitter.Text = "Quitter";
             this.MnuQuitter.Click += new System.EventHandler(this.MnuQuitter_Click);
             // 
-            // editionToolStripMenuItem
+            // MnuEdition
             // 
-            this.editionToolStripMenuItem.Name = "editionToolStripMenuItem";
-            this.editionToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.editionToolStripMenuItem.Text = "&Edition";
+            this.MnuEdition.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuAnnuler,
+            this.MnuRetablir,
+            this.MnuCopier,
+            this.MnuColler});
+            this.MnuEdition.Name = "MnuEdition";
+            this.MnuEdition.Size = new System.Drawing.Size(56, 20);
+            this.MnuEdition.Text = "&Edition";
+            // 
+            // MnuAnnuler
+            // 
+            this.MnuAnnuler.Name = "MnuAnnuler";
+            this.MnuAnnuler.Size = new System.Drawing.Size(152, 22);
+            this.MnuAnnuler.Text = "Annuler";
+            // 
+            // MnuRetablir
+            // 
+            this.MnuRetablir.Name = "MnuRetablir";
+            this.MnuRetablir.Size = new System.Drawing.Size(152, 22);
+            this.MnuRetablir.Text = "Rétablir";
+            // 
+            // MnuCopier
+            // 
+            this.MnuCopier.Name = "MnuCopier";
+            this.MnuCopier.Size = new System.Drawing.Size(152, 22);
+            this.MnuCopier.Text = "Copier";
+            // 
+            // MnuColler
+            // 
+            this.MnuColler.Name = "MnuColler";
+            this.MnuColler.Size = new System.Drawing.Size(152, 22);
+            this.MnuColler.Text = "Coller";
             // 
             // FrmEditeur
             // 
@@ -117,10 +150,14 @@
         private System.Windows.Forms.RichTextBox rtbAffiche;
         private System.Windows.Forms.MenuStrip mnuPrincipal;
         private System.Windows.Forms.ToolStripMenuItem MnuFichier;
-        private System.Windows.Forms.ToolStripMenuItem editionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnuEdition;
         private System.Windows.Forms.ToolStripMenuItem MnuOuvrir;
         private System.Windows.Forms.ToolStripMenuItem MnuEnregister;
         private System.Windows.Forms.ToolStripMenuItem MnuQuitter;
+        private System.Windows.Forms.ToolStripMenuItem MnuAnnuler;
+        private System.Windows.Forms.ToolStripMenuItem MnuRetablir;
+        private System.Windows.Forms.ToolStripMenuItem MnuCopier;
+        private System.Windows.Forms.ToolStripMenuItem MnuColler;
     }
 }
 
