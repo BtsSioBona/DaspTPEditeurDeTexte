@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace TPEditeurDeTexte
@@ -17,13 +18,16 @@ namespace TPEditeurDeTexte
             InitializeComponent();
         }
 
-        private void enregistrerSousToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MnuEnregister_Click(object sender, EventArgs e)
         {
-            SaveFileDialog save = new SaveFileDialog();
-            save.InitialDirectory = @"Documents\";
-            save.Filter = "Fichier texte (*.txt)|*.*";
-            save.Title = "Enregister le fichier";
-            save.ShowDialog();
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.InitialDirectory = @"Documents\";
+            saveDialog.FileName = ".txt";
+            saveDialog.Filter = "Fichier texte (*.txt)|*.*";
+            saveDialog.Title = "Enregister le fichier";
+            saveDialog.ShowDialog();
+            FileStream saveFile = (FileStream)saveDialog.OpenFile();
+            saveFile.Close();
         }
 
         private void MnuQuitter_Click(object sender, EventArgs e)

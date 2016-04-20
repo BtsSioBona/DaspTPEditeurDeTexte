@@ -85,7 +85,7 @@
             this.MnuEnregister.Name = "MnuEnregister";
             this.MnuEnregister.Size = new System.Drawing.Size(157, 22);
             this.MnuEnregister.Text = "Enregistrer sous";
-            this.MnuEnregister.Click += new System.EventHandler(this.enregistrerSousToolStripMenuItem_Click);
+            this.MnuEnregister.Click += new System.EventHandler(this.MnuEnregister_Click);
             // 
             // MnuQuitter
             // 
